@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Gun
   - Pointer
+  - Ground
+  - Wall
+  - Water
+  - Splash
   layers:
   - Default
   - TransparentFX
