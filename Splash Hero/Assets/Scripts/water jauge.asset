@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: water jauge
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":248.0,"y":28.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-294.0,"y":-90.0},"guid":"b79ea9f3-5d35-4af5-add7-c8f08125bbeb","$version":"A","$type":"Unity.VisualScripting.Update","$id":"9"},{"chainable":false,"member":{"name":"fillAmount","parameterTypes":null,"targetType":"UnityEngine.UI.Image","targetTypeName":"UnityEngine.UI.Image","$version":"A"},"defaultValues":{"target":null,"input":{"$content":0.0,"$type":"System.Single"}},"position":{"x":358.0,"y":-89.0},"guid":"b9179e26-6a87-4770-92a3-e4eb767bbd57","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"11"},{"specifyFallback":false,"kind":"Application","defaultValues":{"name":{"$content":"WaterLeft","$type":"System.String"}},"position":{"x":-229.0,"y":51.0},"guid":"a8b9d13e-c587-49a1-b22b-8c5bf73447e1","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"14"},{"defaultValues":{"b":{"$content":20.0,"$type":"System.Single"}},"position":{"x":-26.0,"y":56.0},"guid":"6e317b95-4381-4615-ab3e-062ba6336e5c","$version":"A","$type":"Unity.VisualScripting.ScalarMultiply","$id":"16"},{"defaultValues":{"dividend":{"$content":1.0,"$type":"System.Single"},"divisor":{"$content":100.0,"$type":"System.Single"}},"position":{"x":174.0,"y":54.0},"guid":"ec1b363f-1733-4976-aef7-43ad6a3cc351","$version":"A","$type":"Unity.VisualScripting.ScalarDivide","$id":"18"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"assign","guid":"e23eaf6c-fbcd-43e1-96a9-ade8140a3075","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"a","guid":"274d7109-bd6d-4401-af67-625c9c3b5eac","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"product","destinationUnit":{"$ref":"18"},"destinationKey":"dividend","guid":"2a86dc3a-fea3-4ded-953d-c878c451aeb3","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"quotient","destinationUnit":{"$ref":"11"},"destinationKey":"input","guid":"5b25bd58-24fd-4124-88bf-2fc5d992b524","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
