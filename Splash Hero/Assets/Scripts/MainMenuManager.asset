@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: MainMenuManager
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":150.0,"y":217.0},"zoom":1.0,"elements":[{"kind":"Application","defaultValues":{"name":{"$content":"MenuState","$type":"System.String"}},"position":{"x":255.0,"y":252.0},"guid":"e05955fd-864e-4414-8699-8a3b7f313229","$version":"A","$type":"Unity.VisualScripting.SetVariable","$id":"9"},{"type":"System.Boolean","value":{"$content":true,"$type":"System.Boolean"},"defaultValues":{},"position":{"x":94.0,"y":402.0},"guid":"a890ff25-9975-4c3a-836e-3491d7ae0a26","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"11"},{"kind":"Application","defaultValues":{"name":{"$content":"MenuState","$type":"System.String"}},"position":{"x":318.0,"y":-8.0},"guid":"f45cc232-029c-402f-b6e4-ee6153d6b385","$version":"A","$type":"Unity.VisualScripting.SetVariable","$id":"13"},{"type":"System.Boolean","value":{"$content":false,"$type":"System.Boolean"},"defaultValues":{},"position":{"x":169.0,"y":128.0},"guid":"e8cbcfc1-7847-421d-ac9b-5813a0b07f73","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"15"},{"FloatValue":null,"Vector2Value":null,"InputActionChangeType":"OnPressed","coroutine":false,"defaultValues":{"Target":null,"InputAction":{"id":"ed6e5d2e-bef4-4b92-b1e8-e2bfc7e4e3d7","name":"Up","expectedControlType":"Button","type":"Button","$type":"UnityEngine.InputSystem.InputAction"}},"position":{"x":-112.0,"y":8.0},"guid":"c7b2ef47-cfaa-4e34-bdca-147460839616","$version":"A","$type":"Unity.VisualScripting.InputSystem.OnInputSystemEventButton","$id":"17"},{"FloatValue":null,"Vector2Value":null,"InputActionChangeType":"OnPressed","coroutine":false,"defaultValues":{"Target":null,"InputAction":{"id":"2567dace-8cae-4732-94d9-8c943a5fa6b8","name":"Down","expectedControlType":"Button","type":"Button","$type":"UnityEngine.InputSystem.InputAction"}},"position":{"x":-165.0,"y":246.0},"guid":"3b225456-0c18-4a96-aaec-0fd4338ff390","$version":"A","$type":"Unity.VisualScripting.InputSystem.OnInputSystemEventButton","$id":"20"},{"sourceUnit":{"$ref":"20"},"sourceKey":"trigger","destinationUnit":{"$ref":"9"},"destinationKey":"assign","guid":"b2d1b35e-9887-4f2f-bed5-d50e891b169d","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"assign","guid":"d3855df2-cd01-42d1-af52-d8d490dbd531","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"output","destinationUnit":{"$ref":"9"},"destinationKey":"input","guid":"e2458725-cb2c-4188-9893-4940828ffed6","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"output","destinationUnit":{"$ref":"13"},"destinationKey":"input","guid":"d5a2535b-1603-41a7-9835-d52a4f90c45e","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

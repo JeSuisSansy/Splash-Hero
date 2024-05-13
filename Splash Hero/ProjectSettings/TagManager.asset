@@ -11,6 +11,9 @@ TagManager:
   - Water
   - Splash
   - Target
+  - Play
+  - Quit
+  - PauseMenu
   layers:
   - Default
   - TransparentFX
