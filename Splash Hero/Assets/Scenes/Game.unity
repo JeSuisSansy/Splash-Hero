@@ -593,6 +593,26 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &105306695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017478468950326461, guid: 477c4b41cc23c2548a94ba919f87ec9f, type: 3}
+  m_PrefabInstance: {fileID: 1115831684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &105306703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105306695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":267.0,"y":-15.0},"zoom":1.0,"elements":[{"FloatValue":null,"Vector2Value":null,"InputActionChangeType":"OnPressed","coroutine":false,"defaultValues":{"Target":null,"InputAction":{"id":"1e0ae647-1f18-44f4-b525-4b874b0f89fb","name":"Enter","expectedControlType":"Button","type":"Button","$type":"UnityEngine.InputSystem.InputAction"}},"position":{"x":-242.0,"y":-141.0},"guid":"26401b42-3cd5-4c8a-bdca-78a7d1617668","$version":"A","$type":"Unity.VisualScripting.InputSystem.OnInputSystemEventButton","$id":"10"},{"defaultValues":{},"position":{"x":162.0,"y":-136.0},"guid":"f06ed3a7-2c7f-4b80-9021-dee288af1837","$version":"A","$type":"Unity.VisualScripting.If","$id":"13"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"PlayerIn","$type":"System.String"},"object":null},"position":{"x":-4.0,"y":1.0},"guid":"be64a8ff-8dfd-4233-8e48-d8fd7a94efdb","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"15"},{"chainable":false,"parameterNames":["sceneBuildIndex"],"member":{"name":"LoadScene","parameterTypes":["System.Int32"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneBuildIndex":{"$content":2,"$type":"System.Int32"}},"position":{"x":344.0,"y":-133.0},"guid":"5c4a15ba-0a3f-4baf-ae37-41c06b9b95b3","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"17"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"57de0b8e-21f2-41b0-a862-1530edb3ace7","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"4b2fa3c3-ffdb-4e0a-9c80-b5c82ed8175a","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"value","destinationUnit":{"$ref":"13"},"destinationKey":"condition","guid":"245f2f4a-9c9e-481c-8826-3916904d8c91","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}}'
+    _objectReferences: []
 --- !u!1 &256420378
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +776,14 @@ PrefabInstance:
     - target: {fileID: 2098315185124812040, guid: 3573b085d8b636e41885464ea634265f, type: 3}
       propertyPath: m_Name
       value: Collectible
+      objectReference: {fileID: 0}
+    - target: {fileID: 4282236003850115919, guid: 3573b085d8b636e41885464ea634265f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4282236003850115919, guid: 3573b085d8b636e41885464ea634265f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4282236003850115919, guid: 3573b085d8b636e41885464ea634265f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6320,13 +6348,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HubDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 2365640229779278868, guid: 477c4b41cc23c2548a94ba919f87ec9f, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"PlayerIn","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     - target: {fileID: 8579059628224719190, guid: 477c4b41cc23c2548a94ba919f87ec9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7973433
       objectReference: {fileID: 0}
     - target: {fileID: 8579059628224719190, guid: 477c4b41cc23c2548a94ba919f87ec9f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.96927357
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8579059628224719190, guid: 477c4b41cc23c2548a94ba919f87ec9f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6363,7 +6396,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1017478468950326461, guid: 477c4b41cc23c2548a94ba919f87ec9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 105306703}
   m_SourcePrefab: {fileID: 100100000, guid: 477c4b41cc23c2548a94ba919f87ec9f, type: 3}
 --- !u!1001 &1381289954
 PrefabInstance:
@@ -7038,13 +7074,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint
       objectReference: {fileID: 0}
+    - target: {fileID: 4666737591789787395, guid: 0cafd1c4cb9352d45bb38054160fa641, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666737591789787395, guid: 0cafd1c4cb9352d45bb38054160fa641, type: 3}
+      propertyPath: m_Size.y
+      value: 8.664118
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666737591789787395, guid: 0cafd1c4cb9352d45bb38054160fa641, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666737591789787395, guid: 0cafd1c4cb9352d45bb38054160fa641, type: 3}
+      propertyPath: m_Offset.y
+      value: 3.8320599
+      objectReference: {fileID: 0}
     - target: {fileID: 5820278113979916996, guid: 0cafd1c4cb9352d45bb38054160fa641, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.91
       objectReference: {fileID: 0}
     - target: {fileID: 5820278113979916996, guid: 0cafd1c4cb9352d45bb38054160fa641, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.28
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5820278113979916996, guid: 0cafd1c4cb9352d45bb38054160fa641, type: 3}
       propertyPath: m_LocalPosition.z
