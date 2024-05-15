@@ -15,6 +15,7 @@ TagManager:
   - Quit
   - PauseMenu
   - Matos
+  - CheckpointManager
   layers:
   - Default
   - TransparentFX

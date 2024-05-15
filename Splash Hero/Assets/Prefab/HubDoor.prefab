@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4370301572615372785}
   - component: {fileID: 2183361175009905178}
   - component: {fileID: 4287679525329599289}
+  - component: {fileID: 1767203544970069830}
   m_Layer: 0
   m_Name: HubDoor
   m_TagString: Untagged
@@ -194,3 +195,19 @@ MonoBehaviour:
   m_DefaultActionMap: Default
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1767203544970069830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017478468950326461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 4fd74782da097b442a1ddc399617bdfa, type: 2}
