@@ -16,6 +16,7 @@ TagManager:
   - PauseMenu
   - Matos
   - CheckpointManager
+  - Spike
   layers:
   - Default
   - TransparentFX
@@ -61,4 +62,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 143248045
+    locked: 0
+  - name: Forerground
+    uniqueID: 3175255753
     locked: 0
