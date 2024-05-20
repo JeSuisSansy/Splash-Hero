@@ -17,6 +17,7 @@ TagManager:
   - Matos
   - CheckpointManager
   - Spike
+  - Audio
   layers:
   - Default
   - TransparentFX
